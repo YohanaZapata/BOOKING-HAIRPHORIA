@@ -1,0 +1,48 @@
+.custom-shape-divider-bottom-1687564352 {
+    position: absolute;
+    bottom: 4rem;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1687564352 svg {
+    position: relative;
+    display: block;
+    width: calc(171% + 1.3px);
+    height: 33px;
+}
+
+.custom-shape-divider-bottom-1687564352 .shape-fill {
+    fill: var(--color-primary-4);
+}
+
+.containerError {
+    padding: 2rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 9rem;
+    max-width: 100vw;
+}
+
+.svgErrorTitle {
+    min-width: 90vw;
+    min-height: 40vh;
+    background-image: url("../assets/svg/undraw_page_not_found_re_e9o6.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    margin: .4rem;
+}
+
+.titleError {
+    color: var(--color-primary-0);
+    text-align: center;
+    min-width: 10vw;
+}

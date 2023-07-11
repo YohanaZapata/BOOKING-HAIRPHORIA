@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Validación de cuenta - Hairphoria</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- use the font -->
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+        *{
+            font-family: 'Montserrat', sans-serif;
+            box-sizing: border-box;
+            font-size: 16px;
+            color: #fdfdfc;
+        }
+
+        img {
+            transform: scale(0.5);
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        body {
+            background: #202022;
+        }
+
+        header{
+            background: #f6b1a1;
+        }
+
+        a:visited, a:link, a:active {
+            color: #f6b1a1;
+        }
+
+        div {
+            background: #202022;
+        }
+
+        p {
+            padding: 15px 50px 5px 40px ;
+        }
+
+        ul li {
+            padding: 0px 50px 0px 40px ;
+        }
+
+        main p{
+            padding: 0px 50px 0px 40px ;
+        }
+
+        b {
+            color: #f6b1a1;
+        }
+
+        footer{
+            align-items: center;
+            background-color: #3a393e;
+            bottom: 0;
+            color: white;
+            font-size: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 10px 50px 10px 40px ;
+            margin-top: 40px;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <img src="https://i.ibb.co/KqrC0gY/Hairphoria-Logo2.png" alt="Logo" />
+</header>
+<div>
+    <p>Hola! <b th:text="${nombre + ' ' + apellido}"></b></p>
+    <main>
+        <p>
+            ¡Es un placer confirmar tu turno en <b>Hairphoria</b>  para el próximo servicio! A continuación, te proporciono un resumen de los detalles:
+            <ul style="list-style: none; padding-left: 0">
+                <li> Nombre del servicio: <b th:text="${nombreDelServicio}"></b> </li>
+                <li> Fecha y hora: <b th:text="${fechaYHora}"></b> </li>
+                <li> Profesional asignado: <b th:text="${nombreProfesional + ' ' + apellidoProfesional}"></b> </li>
+                <li> Ubicación: <b th:text="${ciudad}"></b> </li>
+                <li> Precio: <b th:text="${precioDelServicio}"></b> </li>
+            </ul>
+        </p>
+
+        <p>
+            Por favor, asegúrate de llegar a tiempo para que podamos brindarte el mejor servicio posible.
+            Si necesitas realizar alguna modificación o tienes alguna pregunta, no dudes en comunicarte con nosotros.
+        </p>
+        <p>
+            ¡Esperamos verte pronto en <b>Hairphoria</b> y ayudarte a lucir espectacular!
+
+            Saludos cordiales,
+        </p>
+    </main>
+    <p>
+        <ul style="list-style: none; padding-left: 0">
+            <li><b>Team Hairphoria</b></li>
+            <li>Telefono: <b>26578927</b></li>
+            <li>Correo: <b>hairphoriastore@gmail.com</b><li>
+        </ul>
+
+    </p>
+</div>
+<footer>
+    <h6>©2023 Hairphoria</h6>
+    <div className="social">
+        <i className="fab fa-facebook"></i>
+        <i className="fab fa-linkedin-in"></i>
+        <i className="fab fa-twitter"></i>
+        <i className="fab fa-instagram"></i>
+    </div>
+</footer>
+
+</body>
+</html>

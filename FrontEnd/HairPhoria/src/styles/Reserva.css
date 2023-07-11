@@ -1,0 +1,474 @@
+.reservContainer {
+  display: grid;
+  padding: 2%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1px;
+  box-shadow: 4px 8px 8px var(--color-primary-8);
+  justify-content: space-around;
+}
+
+.detailReserva {
+  grid-column: 1 / 2;
+  width: 95%;
+  margin-top: 2%;
+  margin-left: 2%;
+}
+
+.imgDescriptionReserva {
+  width: 100%;
+  height: 100%;
+  transition: all 500ms ease-out;
+  object-fit: cover;
+}
+
+.p-descriptionReserva {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  padding: 5%;
+  font-weight: 700;
+  font-size: 15px;
+  margin: auto;
+  line-height: 1.5;
+  color: var(--color-primary-0);
+}
+
+.figureImage {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 70%;
+  border-radius: 10px;
+  box-shadow: 0px 15px 25px var(--color-primary-7);
+  cursor: pointer;
+}
+
+.capa {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--color-primary-8);
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+}
+
+.figureImage:hover>.capa {
+  opacity: 1;
+  visibility: visible;
+}
+
+.figureImage:hover>.capa .title-descriptionReserva {
+  margin-top: 15%;
+  margin-bottom: 45px
+}
+
+.title-descriptionReserva {
+  color: var(--color-primary-4);
+  font-weight: 900;
+  font-size: 35px;
+  margin-bottom: 280px;
+  transition: all 500ms ease-out;
+  margin-top: 20px;
+}
+
+.locationReserva {
+  display: flex;
+  margin: 5%;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.locationReserva .locationContain {
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.locationReserva .locationContain h4 {
+  color: var(--color-primary-0);
+  font-size: 13px;
+  text-align: left;
+  margin: 0;
+}
+
+.formReserva {
+  grid-column: 2 / 3;
+  width: 95%;
+  margin-bottom: 2%;
+  border-radius: 10px;
+  padding: 2%;
+}
+
+.containerFormReserva {
+  margin-top: 3%;
+  margin-right: 30%;
+  padding: 8%;
+  padding-right: 25%;
+  border-radius: 10px;
+  box-shadow: 0px 25px 25px var(--color-primary-7);
+  width: 85%;
+  text-align: justify;
+  z-index: 0;
+  background-color: var(--color-primary-9);
+}
+
+.datosUser {
+  margin-top: 3%;
+  margin-bottom: 10%;
+  min-height: 300px;
+  padding: 4%;
+  border-radius: 5px;
+  box-shadow: 0px 25px 25px var(--color-primary-7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  width: 40%;
+  overflow: hidden;
+  position: relative;
+  margin-top: -260px;
+  margin-left: 370px;
+  background-color: var(--color-primary-4);
+  z-index: 0;
+}
+
+.formularioReserva {
+  border: 1px solid var(--color-primary-7);
+  margin-top: 3%;
+  padding: 2.5%;
+  width: 80%;
+  border-radius: 5px;
+  box-shadow: 4px 8px 8px var(--color-primary-8);
+}
+
+.checkboxReserva {
+  margin-right: 15px;
+  margin-top: 3%;
+  color: var(--color-primary-0);
+  accent-color: var(--color-primary-4);
+}
+
+.optionCheckBox {
+  margin: 4px;
+  font-weight: bold;
+  font-size: 13px;
+  color: var(--color-primary-0);
+}
+
+.tituloContainerInfoUser,
+.tituloContainerBuscador {
+  color: var(--color-primary-0);
+  font-size: 20px;
+
+}
+
+.tituloContainerInfoUser {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.tituloContainerBuscador {
+  text-align: center;
+  width: 45%;
+}
+
+.formReserva .css-13cymwt-control {
+  border: 1px solid var(--color-primary-7);
+  margin-top: 3%;
+  max-height: 34px;
+  width: 80%;
+  border-radius: 5px;
+  box-shadow: 4px 8px 8px var(--color-primary-8);
+  font-size: 14px;
+}
+
+.formReserva .css-1xc3v61-indicatorContainer {
+  padding: 0px 8px 0px 8px;
+}
+
+.formReserva .css-1nmdiq5-menu {
+  width: 80%;
+  font-size: 14px;
+}
+
+.formReserva .css-t3ipsp-control {
+  border: 1px solid var(--color-primary-7);
+  margin-top: 3%;
+  max-height: 34px;
+  width: 80%;
+  border-radius: 5px;
+  box-shadow: 4px 8px 8px var(--color-primary-8);
+  font-size: 14px;
+}
+
+
+
+.datosOpcionales {
+  font-size: 12px;
+  color: var(--color-primary-0) !important;
+}
+
+.datosOpcionalesError {
+  font-size: 12px;
+  color: var(--color-primary-4);
+}
+
+.datosOpcionales:nth-child(1) {
+  font-weight: bold;
+}
+
+.formField {
+  margin-bottom: 18px;
+}
+
+.buttonFormReservaContainer {
+  display: flex;
+  justify-content: left;
+
+}
+
+.buttonFormReserva {
+  background-color: var(--color-primary-4);
+  border-style: none;
+  border-radius: 4px;
+  padding: .4rem;
+  color: var(--color-primary-9);
+
+}
+
+.buttonFormReserva:hover {
+  background-color: var(--color-primary-0);
+}
+
+.datos {
+  color: var(--color-primary-9);
+  background-color: var(--color-primary-4);
+  border: none;
+  margin-left: 10%;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: left;
+  width: 84%;
+  border-bottom: 1px solid var(--color-primary-9);
+  margin-bottom: 10%;
+}
+
+.datos:nth-child(4) {
+  max-width: 84%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-all;
+  hyphens: auto;
+}
+
+
+
+.nombreDato {
+  color: var(--color-primary-9);
+  font-weight: 500;
+}
+
+.pickerReserva {
+  width: 80%;
+  box-shadow: 4px 8px 8px var(--color-primary-8);
+  height: 43px;
+}
+
+
+
+.pickerReserva .custom-datepicker-input .filtroFecha {
+  width: 100%;
+  padding: 2%;
+  height: 34px !important;
+  font-size: 13px;
+}
+
+
+.barSearchReserva .loopVideo,
+.barSearchReserva h1,
+.barSearchReserva .mensajeSearch {
+  display: none;
+}
+
+.barSearchReserva {
+  grid-column: 1 / 3;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 5%;
+
+
+}
+
+.barSearchReserva .section-buscador {
+  border-radius: 10px;
+  height: 120px;
+  width: 100%;
+}
+
+.barSearchReserva .container-buscador {
+  height: 120px;
+  border-radius: 10px;
+}
+
+/* .barSearchReserva .container-buscador form{
+    justify-content: flex-end;
+    padding: 10%;
+  } */
+
+.barSearchReserva .titleCard {
+  color: var(--color-primary-0);
+}
+
+
+.nombreInput {
+  margin-top: 15px;
+  color: var(--color-primary-0);
+}
+
+.formField #react-select-3-input {
+  font-size: 13px !important;
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .reservContainer {
+    display: block;
+  }
+
+  .figureImage {
+    height: 70vh;
+  }
+
+  .locationContain p {
+    width: 100%;
+  }
+
+  .locationReserva .locationContain {
+    align-items: baseline;
+  }
+
+  .formReserva {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .datosUser {
+    margin-left: 55%;
+  }
+
+  .filtroFecha {
+    width: 100% !important;
+  }
+
+  .tituloContainerBuscador {
+    width: 100%;
+    padding-bottom: 3rem;
+  }
+
+  .barSearchReserva {
+    margin-bottom: 0;
+    padding-bottom: 10%;
+  }
+
+  .containerFormReserva {
+    padding-right: 35%;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .reservContainer {
+    display: block;
+    margin: .6rem;
+  }
+
+  .figureImage {
+    height: 55vh;
+  }
+
+  .p-descriptionReserva {
+    font-size: .8rem;
+  }
+
+  .title-descriptionReserva {
+    font-size: 1.7rem;
+  }
+
+  .locationContain {
+    width: 40vw;
+  }
+
+  .locationContain p {
+    width: 100%;
+  }
+
+  .locationReserva .locationContain {
+    align-items: baseline;
+  }
+
+  .formReserva {
+    width: 100%;
+  }
+
+  .containerFormReserva {
+    width: 100%;
+    font-size: .9rem;
+    padding-right: 0;
+    padding: 2rem;
+  }
+
+  .tituloContainerInfoUser {
+    font-size: 1rem;
+  }
+
+  .formularioReserva, #react-select-3-placeholder {
+    font-size: .7rem;
+  }
+
+  .filtroFecha {
+    width: 100% !important;
+  }
+
+  .formField .formularioReserva {
+    color: var(--color-primary-10) !important;
+  }
+
+  .datosUser {
+    margin-top: .4rem;
+    margin-left: 0;
+    min-width: 84vw;
+    align-self: center;
+    padding: 2rem;
+    box-shadow: 2px 2px 1rem var(--color-primary-7);
+    font-size: .9rem;
+  }
+
+  .datos {
+    margin-left: 5%;
+  }
+
+  .formReserva {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .tituloContainerBuscador {
+    width: 100%;
+    margin: 3rem;
+    font-size: 1rem;
+  }
+
+  .barSearchReserva {
+    height: 50vh;
+  }
+
+  .buttonSearch {
+    width: 5rem !important;
+  }
+
+}

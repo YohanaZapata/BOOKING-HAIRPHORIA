@@ -1,0 +1,112 @@
+.infoProfile {
+    color: var(--color-primary-0);
+    
+}
+
+.backHeader {
+    background-color: var(--color-primary-4);
+    height: 26vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -99999999999;
+}
+
+
+.iconLetters {
+    position: relative;
+    top: 1.5rem;
+    left: 37%;
+    background-color: var(--color-primary-9);
+    box-shadow: 2px 2px 7px var(--color-primary-7);
+    color: var(--color-primary-4);
+    font-size: 1.7rem;
+    border-radius: 50%;
+    max-width: 6rem;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+}
+
+.headerContainer, .sectionPersonal {
+    background-color: var(--color-primary-9);
+    box-shadow: 2px 2px 7px var(--color-primary-7);
+    border-radius: 1rem;
+    color: var(--color-primary-0);
+    position: relative;
+    margin: 2rem;
+    top: -1rem;
+    padding-top: 2rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.headerEmail {
+    font-size: .9rem;
+}
+
+.sectionLabel {
+    font-weight: bold;
+}
+
+.sectionResponse {
+    font-size: .9rem;
+}
+
+.itemProfile {
+    margin: .5rem;
+    text-align: left;
+    border-bottom: 1px solid var(--color-primary-7);
+}
+
+
+/* tablets */
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+    .iconLetters {
+        left: 45%;
+    }
+    .headerContainer, .sectionPersonal {
+        width: 60%;
+        left: 16%;
+    }
+}
+
+/* pc */
+@media only screen and (min-width: 1025px) {
+    .iconLetters {
+        left: 46%;
+    }
+    .headerContainer, .sectionPersonal {
+        width: 50%;
+        left: 22%;
+    }
+    .infoProfile {
+        height: 75vh;
+    }
+}
+
+
+
+.custom-shape-divider-bottom-1687657756 {
+    position: absolute;
+    bottom: -.5rem;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1687657756 svg {
+    position: relative;
+    display: block;
+    width: calc(129% + 1.3px);
+    height: 67px;
+}
+
+.custom-shape-divider-bottom-1687657756 .shape-fill {
+    fill: var(--color-primary-9);
+}

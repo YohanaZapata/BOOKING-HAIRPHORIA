@@ -1,0 +1,43 @@
+.containerReserva {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contentReserva {
+    background-color: var(--color-primary-9);
+    border-radius: 1rem;
+    max-width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem;
+    padding: 2rem;
+}
+
+.contentReserva .emailVideo {
+    width: 8rem;
+    height: 8rem;
+}
+
+.contentInfoReserva {
+    text-align: center;
+}
+
+.titleReserva {
+    color: var(--color-primary-4);
+    margin: .3rem;
+    text-align: center;
+}
+
+.textBold {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 480px) {
+    .contentInfoReserva {
+        font-size: .6rem;
+    }
+}

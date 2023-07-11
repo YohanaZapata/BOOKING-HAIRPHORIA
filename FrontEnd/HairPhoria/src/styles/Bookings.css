@@ -1,0 +1,373 @@
+.containerReservas {
+  color: var(--color-primary-0);
+  z-index: 1;
+}
+
+.containerReservasBg {
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/svg/fondoReservas.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -4;
+}
+
+.barToggle {
+  color: var(--color-primary-9);
+  font-size: .6rem;
+  display: flex;
+  justify-content: center;
+  margin: 3rem .7rem 1rem .7rem;
+}
+
+.barReserva,
+.barHistorial {
+  background-color: var(--color-primary-4);
+  padding: .4rem 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  min-width: 5vw;
+  text-align: center;
+}
+
+.barReserva {
+  border-top-left-radius: .4rem;
+  border-bottom-left-radius: .4rem;
+}
+
+.barHistorial {
+  border-top-right-radius: .4rem;
+  border-bottom-right-radius: .4rem;
+}
+
+.barReserva:hover,
+.barHistorial:hover {
+  background-color: var(--color-primary-7);
+}
+
+.changeBackground {
+  background-color: var(--color-primary-0);
+  transition: background-color 0.3s ease;
+}
+
+.pageReserva,
+.pageHistorial {
+  display: none;
+}
+
+.showPage {
+  display: block;
+  opacity: 1;
+  transition: opacity 1.5s ease;
+}
+
+.fade-in {
+  animation: fade-in 1.5s ease;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* estilos cardfront-back */
+/* estilos animacion */
+
+.cardTurno {
+  font-size: 0.6rem;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+
+.cardInnerTurno {
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  position: relative;
+  width: 77vw;
+  height: 65vh;
+  background-color: var(--color-primary-9);
+  box-shadow: 3px 3px 1rem var(--color-primary-8);
+  border-radius: 1rem;
+  margin: 1rem auto 0;
+  z-index: 2;
+}
+
+.innerTurnoHistorial {
+  height: 55vh;
+}
+
+.isFlipped {
+  transform: rotateY(180deg);
+}
+
+.cardFace {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  /* overflow: hidden; */
+  border-radius: 1rem;
+  z-index: 1;
+}
+
+.editFecha .cardFace{
+  overflow: visible !important;
+}
+
+.cardFaceBack {
+  transform: rotateY(180deg);
+}
+
+.cardTurnoContent {
+  width: 100%;
+  height: 100%;
+}
+
+.highlight {
+  font-weight: bold;
+}
+
+/* estilos card front */
+
+.cardFaceFront {
+  font-size: .7rem;
+}
+
+.waveFrontCard {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.logoHairphoria {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 28vw;
+  z-index: 2;
+}
+
+.cardTurnoFrontBody {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  margin: -1rem auto;
+  text-align: center;
+  z-index: 3;
+}
+
+.cardTurnoFrontBody,
+h3,
+p,
+h4 {
+  margin: .3rem;
+}
+
+.cardTurnoFrontBody .pressEdit {
+  color: var(--color-primary-4);
+  cursor: pointer;
+}
+
+.pressEdit:hover {
+  color: var(--color-primary-0);
+}
+
+/* estilos card back */
+
+.cardTurnoBackBody {
+  padding: 2rem;
+  z-index: 4;
+}
+
+.waveBackCard {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 1rem;
+  position: relative;
+  z-index: -1;
+  top: -23.8rem;
+}
+
+.waveHistorial {
+  top: -20.3rem;
+}
+
+.pressVerTurno {
+  cursor: pointer;
+}
+
+.pressVerTurno:hover {
+  color: var(--color-primary-4);
+}
+
+.buttonUpdate {
+  border: none;
+  background-color: var(--color-primary-0);
+  color: var(--color-primary-9);
+  padding: .3rem;
+  border-radius: .2rem;
+  cursor: pointer;
+  margin-top: .5rem;
+}
+
+.buttonUpdate:hover {
+  background-color: var(--color-primary-6);
+}
+
+/* estilos inputs del form */
+
+.cardTurnoBackBody .formularioReserva, .buttonUpdate {
+  font-size: .6rem;
+}
+
+.formularioReserva {
+  box-shadow: none;
+  color: var(--color-primary-0) !important;
+  font-weight: bold;
+}
+
+.editFecha .custom-datepicker-input .filtroFecha{
+  width: 80% !important;
+  padding: 2%;
+  height: 1.5rem !important;
+  font-size: .6rem !important;
+  color: var(--color-primary-0) !important;
+  font-weight: bold;
+}
+
+.nombreInput {
+  color: var(--color-primary-0) !important;
+  font-weight: bold;
+}
+
+.containerOptionCheckbox .nombreInput {
+  margin-right: .3rem;
+
+}
+
+.guardar, .cancelar {
+  margin-right: .5rem;
+  box-shadow: 1px 1px 2px var(--color-primary-7);
+}
+
+.cancelar {
+  background-color: var(--color-primary-4);
+}
+
+.hide {
+  display: none;
+}
+
+/* estilos calendario */
+
+.react-datepicker {
+  z-index: 999;
+}
+
+
+.editFecha .react-datepicker__close-icon {
+  top: 1.2px;
+  right: 4.5rem;
+  width: .1rem;
+  font-size: 8px
+}
+
+.editFecha .react-datepicker__close-icon::after{
+font-size: 18px !important;
+height: 8px !important;
+}
+
+/* tablets */
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+  .cardInnerTurno {
+    height: 70vh;
+    width: 40vw;
+  }
+
+  .innerTurnoHistorial {
+    height: 50vh;
+    width: 42vw;
+  }
+
+  .cardTurno {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+  }
+
+  .editFecha div.react-datepicker {
+    font-size: 0.5rem ;
+  }
+
+  .waveBackCard {
+    top: -23.5rem;
+  }
+
+  .waveHistorial {
+    top: -21rem;
+  }
+  
+}
+
+/* pc */
+@media only screen and (min-width: 1025px) {
+  .cardInnerTurno {
+    height: 65vh;
+    width: 27vw;
+  }
+
+  .innerTurnoHistorial {
+    height: 55vh;
+  }
+
+  .cardTurno {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+  }
+  .cardFaceFront {
+    font-size: .9rem;
+  }
+
+  .waveBackCard {
+    top: -27rem;
+  }
+
+  .waveHistorial {
+    top: -25.5rem;
+  }
+  .barHistorial, .barReserva {
+    font-size: .8rem;
+  }
+
+  .cardTurno {
+    font-size: .8rem;
+  }
+
+  .cardTurnoBackBody .formularioReserva, .buttonUpdate {
+    font-size: .8rem;
+  }
+
+  .editFecha .custom-datepicker-input .filtroFecha{
+    font-size: .8rem !important;
+  }
+}
